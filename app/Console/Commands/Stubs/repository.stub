@@ -1,0 +1,30 @@
+<?php
+
+namespace DummyNamespace;
+
+use App\DummyModel;
+use Illuminate\Http\Request;
+
+class DummyRepository 
+{
+    protected $model
+
+    /*
+        Instantiate repository
+    */
+
+    public function __construct( DummyModel $model)
+    {
+        $this->model = model;
+    }
+
+    //Repository methods
+
+    public function create(Request $request){}
+
+    public function alter( DummyModel $model ){}
+
+    public function update( DummyModel $model ){}
+
+    public function delete( DummyModel $model ){}
+}
